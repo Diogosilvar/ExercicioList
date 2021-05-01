@@ -1,0 +1,20 @@
+<h2>Lista de Alunos</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Curso</th>
+            <th>Faculdade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let aluno of alunos">
+            <td>{{ aluno.id }}</td>
+            <td>{{ aluno.nome }}</td>
+            <td>{{ aluno.curso }}</td>
+            <td>{{ aluno.faculdade }}</td>
+        </tr>
+    </tbody>
+</table>
